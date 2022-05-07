@@ -15,12 +15,6 @@ import math
 f = math.sqrt(64)
 print(int(f))
 
-import json
-
-x = '{"name":"asd", "age":"22"}'
-y = json.loads(x)
-print(y["age"])
-
 import re
 
 x = "ali very GAV"
