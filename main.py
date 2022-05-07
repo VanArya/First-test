@@ -1,6 +1,6 @@
 import mymodule as mym
 
-mym.greeting("sag")
+mym.greeting("sen")
 mym.zarb(17)
 x = mym.P1["age"]
 print(x)
