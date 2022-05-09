@@ -1,6 +1,11 @@
-import re
-def disemvowel(string_):
-    print(re.sub(r"[aAuUiIeEoO]","", string_))
+def isDigit(string):
+    if type(string) is int or float:
+        return True
+#     if type(string) is str:
+#          return False
+#     if type(string) is float:
+#         return True
+    else:
+        return False
 
-print(disemvowel("ThE qUicK bRoWn fOx JuMpA ovEr ThE lAzY Dog"))
-#link = https://www.codewars.com/kata/52fba66badcd10859f00097e/train/python
+ #link https://www.codewars.com/kata/57126304cdbf63c6770012bd/train/python
