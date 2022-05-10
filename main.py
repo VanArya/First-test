@@ -1,13 +1,13 @@
-def isDigit(string):
-    try:
-        if type(int(string)) is int:
-            return True
-    except:
-        try:
-            if type(float(string)) is float:
-                return True
-        except:
-            return False
+class py_solution:
+    def roman_to_int(self, s):
+        rom_val = {'I': 1, 'IV' : 4, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
+        int_val = 0
+        for i in range(len(s)):
+            if i > 0 and rom_val[s[i]] > rom_val[s[i - 1]]:
+                int_val += rom_val[s[i]] - 2 * rom_val[s[i - 1]]
+            else:
+                int_val += rom_val[s[i]]
+        return int_val
 
-print(isDigit("--12.5"))
- #link https://www.codewars.com/kata/57126304cdbf63c6770012bd/train/python
+print(py_solution().roman_to_int('MMMCMLXXXVI'))
+# https://www.codewars.com/kata/51b6249c4612257ac0000005/train/python
